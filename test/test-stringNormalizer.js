@@ -25,4 +25,10 @@ describe('normalizeString', function () {
   it('should convert underscores to dashes', function () {
     assert.equal(stringNormalizer.normalizeString('Hello_there'), 'hello-there')
   });
+  it('should convert commas to dashes', function () {
+    assert.equal(stringNormalizer.normalizeString('Hello, there'), 'hello-there')
+  });
+  it('should convert pipes to dashes', function () {
+    assert.equal(stringNormalizer.normalizeString('Hello|there'), 'hello-there')
+  });
 });

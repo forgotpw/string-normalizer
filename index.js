@@ -4,6 +4,10 @@ module.exports.normalizeString = function(s) {
     s = s.toLowerCase();
     // replace spaces with dashes
     s = s.replace(/\s+/g, '-');
+    // replace commas with dashes
+    s = s.replace(/,/g, '-');
+    // replace pipes with dashes
+    s = s.replace(/\|/g, '-');
     // replace underscores with dashes
     s = s.replace(/_/g, '-');
     // remove non alphanumeric characters except spaces

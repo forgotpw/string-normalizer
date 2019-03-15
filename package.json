@@ -1,6 +1,6 @@
 {
   "name": "string-normalizer",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "A consistent way to normalize strings across projects",
   "main": "index.js",
   "author": "dwkerwin@gmail.com",
